@@ -23,6 +23,16 @@ app.post("/get-advice", async (req, res) => {
     }
 });
 
+app.post("/get-joke", async (req, res) => {
+    try{
+        const result = await axios.get("https://official-joke-api.appspot.com/jokes/random");
+        const joke = '-  "' + result.data.setup + '"      -  "' + result.data.punchline + '"';
+        res.render("index.ejs", { content: joke });
+    } catch (error) {
+        res.render("index.ejs", { content: JSON.stringify(error.response.data )});
+    }
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
