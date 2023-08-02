@@ -1,2 +1,16 @@
-
+<%- include("partials/header.ejs") %>
     
+<div class="container">
+    <div class="response-area">
+        <p>
+            <%= content %>
+        </p>
+<form id="myForm" method="post">
+    <input id="advice" type="submit" value="Advice" formaction="/get-advice">
+    <input id="joke" type="submit" value="Joke" formaction="/get-joke">
+</form>
+</div>
+</div>
+
+
+<%- include("partials/footer.ejs") %>
