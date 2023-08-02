@@ -1,5 +1,30 @@
 body {
-    /* background-image: linear-gradient(#461959, #7A316F, #CD6688) !important; */
+    background-image: linear-gradient(to right, #75C2F6, #F4D160) !important;
+}
+
+.main {
+    min-height: 90vh;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+.btn {
+    font-size: 20px !important; 
+}
+
+.advice-btn {
+    background-color: #1D5D9B !important;
+    border-color:#1D5D9B !important;
+}
+
+.input-block {
+    padding: 2rem;
+    border: 3px solid #1D5D9B;
+    border-radius: 10px;
+    font-family: Cambria, serif;
+    background-color:aliceblue;
 }
 
 .footer {
