@@ -1,0 +1,20 @@
+{
+  "name": "joke-advice-generator",
+  "version": "1.0.0",
+  "description": "Generating of random jokes and advices",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adelina122/joke-advice-generator.git"
+  },
+  "author": "Adelina.vk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adelina122/joke-advice-generator/issues"
+  },
+  "homepage": "https://github.com/Adelina122/joke-advice-generator#readme"
+}
