@@ -1,18 +1,17 @@
 import express from "express";
 import axios from "axios";
-import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
 const API_URL = "";
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
     res.render("index.ejs");
 });
 
+// When "Advice" button is clicked
 app.post("/get-advice", async (req, res) => {
     try {
         const result = await axios.get("https://api.adviceslip.com/advice");
@@ -22,6 +21,7 @@ app.post("/get-advice", async (req, res) => {
     }
 });
 
+// When "Joke" button is clicked
 app.post("/get-joke", async (req, res) => {
     try{
         const result = await axios.get("https://official-joke-api.appspot.com/jokes/random");
