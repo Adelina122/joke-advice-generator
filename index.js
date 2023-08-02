@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
     // res.send("Hello");
-    res.render("index.ejs", { content: "Click a button" });
+    res.render("index.ejs");
 });
 
 app.post("/get-advice", async (req, res) => {
